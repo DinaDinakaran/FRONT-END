@@ -8,11 +8,11 @@ import "./Amazon.css"
 
 
 export default function Amazon() {
-  const [bookings, setbookings] = useState([]);
+  const [amzndata, setamzndata] = useState([]);
  
     const data1 = async ()=>{
       const data = await (await axios.get("https://hekathon-2.herokuapp.com/amazon")).data;
-      setbookings(data);
+      setamzndata(data);
   
    
    
@@ -37,8 +37,8 @@ export default function Amazon() {
           </tr>
         </thead>
         <tbody>
-        {bookings.length &&
-              bookings.map((amazon) => {
+        {amzndata.length &&
+              amzndata.map((amazon) => {
                 console.log(amazon)
                 return (
                   <tr>

@@ -5,11 +5,11 @@ import "./Snapdeal.css"
 import axios from 'axios'
 
 export default function Snapdeal() {
-  const [bookings, setbookings] = useState([]);
+  const [snpdldata, setsnpdldata] = useState([]);
  
   const data1 = async ()=>{
     const data = await (await axios.get("https://hekathon-2.herokuapp.com/snapdeal")).data;
-    setbookings(data);
+    setsnpdldata(data);
 
  
  
@@ -34,8 +34,8 @@ return (
         </tr>
       </thead>
       <tbody>
-      {bookings.length &&
-            bookings.map((snapdeal) => {
+      {snpdldata.length &&
+            snpdldata.map((snapdeal) => {
               console.log(snapdeal)
               return (
                 <tr>

@@ -16,11 +16,11 @@ import axios from 'axios'
 
 export default function Flipkart() {
 
-  const [bookings, setbookings] = useState([]);
+  const [flpkrtndata, setflpkrtndata] = useState([]);
  
     const data1 = async ()=>{
       const data = await (await axios.get("https://hekathon-2.herokuapp.com/flipkart")).data;
-      setbookings(data);
+      setflpkrtndata(data);
   
    
    
@@ -45,8 +45,8 @@ export default function Flipkart() {
           </tr>
         </thead>
         <tbody>
-        {bookings.length &&
-              bookings.map((flipkart) => {
+        {flpkrtndata.length &&
+              flpkrtndata.map((flipkart) => {
                 console.log(flipkart)
                 return (
                   <tr>
