@@ -30,7 +30,6 @@ export default function Flipkart() {
   useEffect( () => {
  data1();
   },[]);
-  // console.log("flipkart :", flipkart)
 
 
   return (
