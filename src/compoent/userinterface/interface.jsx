@@ -13,7 +13,7 @@ export default function Interface() {
       <div className="navbar">
         <div className="postions">
           <div className="right">
-            <div className="title">Web Scraping</div>
+            <div className="title">Web Scraping Project</div>
           </div>
           <div className="left">
             <div className="language"><LanguageIcon/></div>
